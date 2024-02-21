@@ -1,0 +1,33 @@
+2024-01-18 1345 hrs
+
+- Finalized the fields to be used in the database. (Id, Name, Type, Color, Material, Compartments, Size, Price)
+
+- Created a new Web App project "pursify" in Visual Studio, using the ASP.NET Core Web App (Model-View-Controller) template.
+
+- Added a Model in the "Models" section, new class named "Purse.cs."
+
+- Added scaffolding to generate CRUD pages for the "Movie" model.
+
+- Add a new scaffolded item; in "Controllers", Scaffolding creates the following:
+
+A movies controller: Controllers/PursesController.cs
+Razor view files for Create, Delete, Details, Edit, and Index pages: Views/Purses/*.cshtml
+A database context class: Data/pursifyContext.cs
+
+- Created a new class "SeedData" in the Models folder, it has the data that will be used to populate the DB. 
+
+- In the Package Manager Console (PMC), Added Migration InitialCreate (20240125095935_InitialCreate.cs) and updated database to the latest migration.
+
+- Added search functionality to the website, added <form> tags in Views/Purses/Index.cshtml and modified Controllers/PursesController.cs.
+
+- Added a search by genre option, by adding the class  PurseTypeViewModel to models, updated the index view Views/Purses/Index.cshtml.
+
+- Added new field "Material" to the model. Updated the view templates (Create.cshtml, Delete.cshtml, Details.cshtml, Edit.cshtml, Index.cshtml).
+
+- Added Material field and data in SeedData.cs, in order to update te database with the new field. Build and creayed another migration "Material".
+
+- Added validation rules to the movie model, attributes such as StringLength, MinimumLength, Required, Range, etc. in movie.cs.
+
+- Added shortcut link at home page, modified UI.
+
+- Added github account to visual studio, created repository and pushed the project.
