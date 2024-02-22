@@ -4,10 +4,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace pursify.Models
 {
     public class Purse
-
     {
         public int Id { get; set; }
-        
+
         [StringLength(60, MinimumLength = 1)]
         [Required]
         public string? Name { get; set; }
@@ -28,9 +27,8 @@ namespace pursify.Models
         public string? Material { get; set; }
 
         [Required]
-        [StringLength(2)]
         [Display(Name = "Compartments")]
-        public decimal Comp { get; set; }
+        public decimal Comp { get; set; } // Removed StringLength validation attribute
 
         [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
         [Required]
@@ -42,3 +40,4 @@ namespace pursify.Models
         public decimal Price { get; set; }
     }
 }
+
