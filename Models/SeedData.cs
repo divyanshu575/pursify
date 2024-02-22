@@ -99,7 +99,38 @@ public static class SeedData
                      Comp = 4,
                      Size = "Large",
                      Price = 55
+                 },
+                 new Purse
+                 {
+                     Name = "Special Edition Ranger Backpack",
+                     Type = "Backpack",
+                     Color = "Olive Green",
+                     Material = "PU",
+                     Comp = 3,
+                     Size = "Large",
+                     Price = 199
+                 },
+                 new Purse
+                 {
+                     Name = "Ovel Model Wallet",
+                     Type = "Wallet",
+                     Color = "Orange",
+                     Material = "Polyester",
+                     Comp = 2,
+                     Size = "Large",
+                     Price = 99
+                 },
+                 new Purse
+                 {
+                     Name = "Rolex Wallet",
+                     Type = "Wallet",
+                     Color = "Pink",
+                     Material = "genuine Leather ",
+                     Comp = 2,
+                     Size = "Large",
+                     Price = 350
                  }
+
             );
             context.SaveChanges();
         }
