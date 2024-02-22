@@ -1,3 +1,27 @@
+2024-01-15 1600 hrs
+
+- Fields decided:
+
+Name (String)	
+Type (String)	
+Color (String)	
+Comp (decimal)	
+Size (String)	
+Price (decimal)
+Material (String)	
+
+- Entries decided:
+
+Scudera Ferrari Style Wallet
+Gucci GG Marmont Bifold Wallet
+Tom Ford Micro Grain Bifold Wallet
+Balenciaga Superbusy Messenger Bag
+Swissgear Anti-Theft Backpack
+Ralph Lauren Ranger Backpack
+Adidas Defender Duffle bag
+
+
+
 2024-01-18 1345 hrs
 
 - Finalized the fields to be used in the database. (Id, Name, Type, Color, Material, Compartments, Size, Price)
@@ -8,11 +32,7 @@
 
 - Added scaffolding to generate CRUD pages for the "Movie" model.
 
-- Add a new scaffolded item; in "Controllers", Scaffolding creates the following:
-
-A movies controller: Controllers/PursesController.cs
-Razor view files for Create, Delete, Details, Edit, and Index pages: Views/Purses/*.cshtml
-A database context class: Data/pursifyContext.cs
+- Add a new scaffolded item; in "Controllers", which creates: a purses controller: Controllers/PursesController.cs, Razor view files for Create, Delete, Details, Edit, and Index pages: Views/Purses/*.cshtml, and a database context class: Data/pursifyContext.cs.
 
 - Created a new class "SeedData" in the Models folder, it has the data that will be used to populate the DB. 
 
@@ -20,7 +40,7 @@ A database context class: Data/pursifyContext.cs
 
 - Added search functionality to the website, added <form> tags in Views/Purses/Index.cshtml and modified Controllers/PursesController.cs.
 
-- Added a search by genre option, by adding the class  PurseTypeViewModel to models, updated the index view Views/Purses/Index.cshtml.
+- Added a search by genre option, by adding the class  PurseTypeV iewModel to models, updated the index view Views/Purses/Index.cshtml.
 
 - Added new field "Material" to the model. Updated the view templates (Create.cshtml, Delete.cshtml, Details.cshtml, Edit.cshtml, Index.cshtml).
 

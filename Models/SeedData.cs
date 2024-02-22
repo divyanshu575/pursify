@@ -24,44 +24,81 @@ public static class SeedData
             context.Purse.AddRange(
                 new Purse
                 {
-                    Name = "Wallet 1",
+                    Name = "Scudera Ferrari Style Wallet",
                     Type = "Wallet",
                     Color = "Red",
-                    Material = "Leather",
+                    Material = "Polyester",
                     Comp = 4,
                     Size = "Small",
-                    Price = 500
+                    Price = 70
 
                 },
+
                 new Purse
                 {
-                    Name = "Messenger bag 1",
+                    Name = "Gucci GG Marmont Bifold Wallet",
+                    Type = "Wallet",
+                    Color = "Black",
+                    Material = "Leather",
+                    Comp = 6,
+                    Size = "Small",
+                    Price = 650
+
+                },
+
+                new Purse
+                {
+                    Name = "Tom Ford Micro Grain Bifold Wallet",
+                    Type = "Wallet",
+                    Color = "Brown",
+                    Material = "Leather",
+                    Comp = 5,
+                    Size = "Small",
+                    Price = 750
+
+                },
+
+                new Purse
+                {
+                    Name = "Balenciaga Superbusy Messenger Bag",
                     Type = "Messenger bag",
                     Color = "Blue",
-                    Material = "Cotton",
-                    Comp = 3,
+                    Material = "Leather",
+                    Comp = 5,
                     Size = "Medium",
-                    Price = 800
+                    Price = 3000
                 },
                new Purse
                {
-                   Name = "Backpack 1",
+                   Name = "Swissgear Anti-Theft Backpack",
                    Type = "Backpack",
-                   Color = "Green",
-                   Material = "Nylon",
+                   Color = "Grey",
+                   Material = "Polyester",
                    Comp = 2,
                    Size = "Large",
-                   Price = 1300
+                   Price = 140
                },
+
+               new Purse
+               {
+                   Name = "Ralph Lauren Ranger Backpack",
+                   Type = "Backpack",
+                   Color = "Green",
+                   Material = "Polyester",
+                   Comp = 2,
+                   Size = "Large",
+                   Price = 250
+               },
+
                  new Purse
                  {
-                     Name = "Duffle bag 1",
+                     Name = "Adidas Defender Duffle bag",
                      Type = "Duffle bag",
-                     Color = "Yellow",
-                     Material = "Leather",
-                     Comp = 3,
+                     Color = "Blue",
+                     Material = "Polyester",
+                     Comp = 4,
                      Size = "Large",
-                     Price = 950
+                     Price = 55
                  }
             );
             context.SaveChanges();
