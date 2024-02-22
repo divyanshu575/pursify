@@ -1,3 +1,9 @@
+Web Application Security - CYB206
+Group Name:Gamma
+Lokesh Donga
+GopiKrishna Thottathil
+Divyanshu Sharma
+
 2024-01-15 1600 hrs
 
 - Fields decided:
@@ -53,3 +59,18 @@ Adidas Defender Duffle bag
 - Added shortcut link at home page, modified UI.
 
 - Added github account to visual studio, created repository and pushed the project.
+
+Errors- 
+
+- SQL error: Due to different data types, we fix this by correcting data types in the Model
+- Naming convention was a little confusing and run into some errors
+- Reasearch online for styling options for modifying UI.
+
+2024-01-18 1801 hrs
+Migration is created - 20240218235606_InitialCreate, 20240219030338_Material, 20240222165514_Initial2
+
+
+2024-01-22 1335 hrs
+Added a button to naviagvte to the inventory
+Updated Readme and modified the seddata file with 3 more items.
+Commited proect.
