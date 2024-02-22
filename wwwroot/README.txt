@@ -22,6 +22,8 @@ Adidas Defender Duffle bag
 
 
 
+
+
 2024-01-18 1345 hrs
 
 - Finalized the fields to be used in the database. (Id, Name, Type, Color, Material, Compartments, Size, Price)

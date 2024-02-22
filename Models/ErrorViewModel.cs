@@ -2,7 +2,7 @@ namespace pursify.Models
 {
     public class ErrorViewModel
     {
-        public string? RequestId { get; set; }
+        public decimal? RequestId { get; set; }
 
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
     }
