@@ -30,7 +30,7 @@ Adidas Defender Duffle bag
 
 
 
-2024-01-18 1345 hrs
+2024-01-17 1345 hrs, Time: 2 hrs 30 min
 
 - Finalized the fields to be used in the database. (Id, Name, Type, Color, Material, Compartments, Size, Price)
 
@@ -69,8 +69,12 @@ Errors-
 2024-01-18 1801 hrs
 Migration is created - 20240218235606_InitialCreate, 20240219030338_Material, 20240222165514_Initial2
 
+2024-01-18 1345 hrs, Time: 1 hr
 
-2024-01-22 1335 hrs
+- Customized background, colours, added icon on home page.
+
+
+2024-01-22 1335 hrs 
 Added a button to naviagvte to the inventory
 Updated Readme and modified the seddata file with 3 more items.
 Commited proect.
