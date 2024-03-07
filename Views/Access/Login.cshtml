@@ -17,12 +17,12 @@
         <input type="email" placeholder="Email" asp-for="Email" style="margin: 0 auto; display: block;" />
         <input type="Password" placeholder="Password" asp-for="Password" style="margin: 0 auto; display: block;"/>
 
-        <div style="text-align: center; margin-top: 10px;">
+        <div style="color: white; font-family: Roboto; text-align: center; margin-top: 10px;">
         <label>
             <input type="checkbox" asp-for="KeepLoggedIn" style="margin: 0 auto; display: inline-block;" /> Keep me logged In.
         </label>
         </div>
-        <button type="submit" style="text-align: center; margin: 0 auto; display: block;">Login</button>
+        <button type="submit" style="text-align: center; margin: 0 auto; margin-top: 10px; display: block;">Login</button>
 
         @if(ViewData["ValidateMessage"] != null)
         {
