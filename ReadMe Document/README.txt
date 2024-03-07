@@ -116,7 +116,14 @@ Added a builder services to add Authentication where we defined login path and t
 Problmes Faced - LogOut Button Now Working where it is giving the error page when ever user click on logout button.
 Reference - Lokesh have referedd to some online materail to add the authentication, here is the reference https://www.youtube.com/watch?v=uGoNCJf0t1g
 
+Gopi - 
 
-Date & Time: 2024-03-07 09:05
+Date & Time: 2024-03-07 0905
 - Modified the AccessController to impliment log out action method to sign users out and redirect them to the login page after logout.
 - Conducted testing of the logout button functionality following the adjustments made in the AccessController
+
+Divyanshu -
+
+Date & Time: 2024-03-07 1105
+- Added register button (work in progress)
+- Added theme to authentication page.

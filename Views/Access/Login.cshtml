@@ -11,17 +11,18 @@
     <meta name="viewport" content="width=device-width" />
     <title>Login</title>
 </head>
-<body>
+<body style="background-image: url('back.png'); background-size: cover; background-position: center;">
     <form asp-controller="Access" asp-action="Login" method="post">
-        <h1>Login</h1>
-        <input type="email" placeholder="Email" asp-for="Email"/>
-        <input type="Password" placeholder="Password" asp-for="Password"/>
+        <h1 style="color: white; font-family: Roboto; font-weight:200; font-size: 35px; text-align: center;">Login</h1>
+        <input type="email" placeholder="Email" asp-for="Email" style="margin: 0 auto; display: block;" />
+        <input type="Password" placeholder="Password" asp-for="Password" style="margin: 0 auto; display: block;"/>
 
+        <div style="text-align: center; margin-top: 10px;">
         <label>
-            <input type="checkbox" asp-for="KeepLoggedIn" />
-            Keep me logged In.
+            <input type="checkbox" asp-for="KeepLoggedIn" style="margin: 0 auto; display: inline-block;" /> Keep me logged In.
         </label>
-        <button type="submit">Login</button> 
+        </div>
+        <button type="submit" style="text-align: center; margin: 0 auto; display: block;">Login</button>
 
         @if(ViewData["ValidateMessage"] != null)
         {
@@ -30,5 +31,22 @@
             <label>@ViewData["ValidateMessage"]</label>
         }
     </form>
+
+    <form asp-controller="Access" asp-action="Register" method="post" style="margin: 0 auto; display: block;">
+        <h1 style="color: white; font-family: Roboto; font-weight:200; font-size: 35px; text-align: center;">Register</h1>
+        <input type="email" placeholder="Email" asp-for="Email" style="margin: 0 auto; display: block;" />
+        <input type="password" placeholder="Password" asp-for="Password" style="margin: 0 auto; display: block;"  />
+        
+
+        <button type="submit" style="margin: 0 auto; margin-top: 10px; display: block;">Register</button>
+
+        @if (ViewData["RegisterMessage"] != null)
+        {
+            <br />
+            <br />
+            <label>@ViewData["RegisterMessage"]</label>
+        }
+    </form>
+
 </body>
 </html>
