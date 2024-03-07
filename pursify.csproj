@@ -7,12 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="README.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="ReadMe Document\README.txt" />
-    <Content Include="README.txt" />
   </ItemGroup>
 
   <ItemGroup>
