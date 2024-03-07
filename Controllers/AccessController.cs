@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
-
+﻿using System.Collections.Generic;
 using System.Security.Claims;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Mvc;
 using pursify.Models;
 
 namespace pursify.Controllers
@@ -17,19 +18,20 @@ namespace pursify.Controllers
 
             return View();
         }
+
         [HttpPost]
         public async Task<IActionResult> Login(PursifyLogin modelLogin)
         {
-            if (modelLogin.Email == "gamma@nation.com" && 
+            if (modelLogin.Email == "gamma@nation.com" &&
                 modelLogin.Password == "Gamma@CYB206")
             {
                 List<Claim> claims = new List<Claim>()
                 {
                     new Claim(ClaimTypes.NameIdentifier, modelLogin.Email),
-                    new Claim("OtherProperties","Example Role")
+                    new Claim("OtherProperties", "Example Role")
                 };
                 ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims,
-                    CookieAuthenticationDefaults.AuthenticationScheme );
+                    CookieAuthenticationDefaults.AuthenticationScheme);
 
                 AuthenticationProperties properties = new AuthenticationProperties()
                 {
@@ -42,8 +44,14 @@ namespace pursify.Controllers
                 return RedirectToAction("Index", "Home");
             }
 
-            ViewData["ValidateMessage"] = "user not found";
+            ViewData["ValidateMessage"] = "User not found";
             return View();
+        }
+
+        public async Task<IActionResult> LogOut()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Index", "Home");
         }
     }
 }
