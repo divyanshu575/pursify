@@ -127,3 +127,11 @@ Divyanshu - Time: 30 min
 Date & Time: 2024-03-07 1105
 - Added register button (work in progress)
 - Added theme to authentication page.
+
+Gopi - Time: 1min
+
+PLEASE NOTE :
+      LOGIN CREDENTIALS
+username: gamma@nation.com
+Password: Gamma@CYB206
+
