@@ -32,6 +32,8 @@ Adidas Defender Duffle bag
 
 2024-01-17 1345 hrs, Time: 2 hrs 30 min
 
+Divyanshu
+
 - Finalized the fields to be used in the database. (Id, Name, Type, Color, Material, Compartments, Size, Price)
 
 - Created a new Web App project "pursify" in Visual Studio, using the ASP.NET Core Web App (Model-View-Controller) template.
@@ -67,14 +69,49 @@ Errors-
 - Reasearch online for styling options for modifying UI.
 
 2024-01-18 1801 hrs
-Migration is created - 20240218235606_InitialCreate, 20240219030338_Material, 20240222165514_Initial2
+Divyanshu
+- Migration is created - 20240218235606_InitialCreate, 20240219030338_Material, 20240222165514_Initial2
 
-2024-01-18 1345 hrs, Time: 1 hr
+2024-02-18 1345 hrs, Time: 1 hr
 
+GopiKrishna
 - Customized background, colours, added icon on home page.
 
 
-2024-01-22 1335 hrs 
-Added a button to naviagvte to the inventory
-Updated Readme and modified the seddata file with 3 more items.
-Commited proect.
+2024-02-22 1335 hrs 
+ 
+Lokesh 
+- Added a button to naviagvte to the inventory
+- Updated Readme and modified the seddata file with 3 more items.
+- Commited project.
+
+
+2024-03-06 2034 hrs Total Time worked on 2024-03-06 = 120 minutes
+
+Lokesh
+
+- Navigated to Program.cs and added a Authentication.Cookies method, then
+Added a builder services to add Authentication where we defined login path and timespan.
+- Also Modified MapControllerRoute logic to call the pattern where controller=Access and Action =Login
+
+2024-03-06 2105
+- Added a new class to Models folder with name as PursifyLogin
+- Created a Model for login view page
+
+2024-03-06 2115
+- Added a new controller to under controller folder with name AccessController
+- Once Controller page is create added some Authentication Classes likes System.Security.Claims, Authentication, Authentication Cookies
+- Created a public IActionResult Login action logic within the AccessController where we have hard coded the Username and Password.
+
+2024-03-06 2145
+- Navigated to PursesController.cs controller and added some predifiend methods like Authentication, Authentication Cookies, and Authorization
+- Aded a new public class as async Task IActionResult LogOut
+- Defined a method [Authorize] in the intial phase so that only logged in user can enter the web page
+
+2024-03-06 22:05
+- Navigated to Layout.cshtml and added a class with stating asp-controller="Home" and asp-action="LogOut"
+- Navigated to AccessController controller and right click on the Login public action result and select Add View and select Razor View
+- Now Added a model method to callout the Models.PursifyLogin class 
+
+Problmes Faced - LogOut Button Now Working where it is giving the error page when ever user click on logout button.
+

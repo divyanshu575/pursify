@@ -8,8 +8,14 @@ using Microsoft.EntityFrameworkCore;
 using pursify.Data;
 using pursify.Models;
 
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
+
+
 namespace pursify.Controllers
 {
+    [Authorize]
     public class PursesController : Controller
     {
         private readonly pursifyContext _context;
@@ -176,6 +182,12 @@ namespace pursify.Controllers
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+        }
+
+        public async Task<IActionResult> LogOut()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Login","Access");
         }
 
         private bool PurseExists(int id)
