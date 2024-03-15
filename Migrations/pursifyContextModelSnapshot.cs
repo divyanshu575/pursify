@@ -35,7 +35,6 @@ namespace pursify.Migrations
                         .HasColumnType("nvarchar(40)");
 
                     b.Property<decimal>("Comp")
-                        .HasMaxLength(2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Material")

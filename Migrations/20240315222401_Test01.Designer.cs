@@ -11,8 +11,8 @@ using pursify.Data;
 namespace pursify.Migrations
 {
     [DbContext(typeof(pursifyContext))]
-    [Migration("20240222165514_Initial2")]
-    partial class Initial2
+    [Migration("20240315222401_Test01")]
+    partial class Test01
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -38,7 +38,6 @@ namespace pursify.Migrations
                         .HasColumnType("nvarchar(40)");
 
                     b.Property<decimal>("Comp")
-                        .HasMaxLength(2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Material")
