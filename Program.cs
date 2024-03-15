@@ -6,9 +6,9 @@ using pursify.Data;
 using pursify.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<pursifyContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("pursifyContext") ?? throw new InvalidOperationException("Connection string 'pursifyContext' not found.")));
-
+//builder.Services.AddDbContext<pursifyContext>(options =>
+//options.UseSqlServer(builder.Configuration.GetConnectionString("pursifyContext") ?? throw new InvalidOperationException("Connection string 'pursifyContext' not found.")));
+builder.Services.AddDbContext<pursifyContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("pursifyContext")));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
